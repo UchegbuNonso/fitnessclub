@@ -1,0 +1,67 @@
+.join{
+    display: flex;
+    padding: 0 2rem;
+    gap: 10rem;
+}
+.left-j{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+}
+.left-j>hr{
+    position: absolute;
+    width: 10.5rem;
+    border: 2px solid var(--orange);
+    border-radius: 20%;
+    margin: -10px 0;
+}
+.left-j>div{
+    display: flex;
+    gap: 1rem;
+}
+.right-j{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.email-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: gray;
+    padding: .5rem 1rem;
+    width: 350px;
+}
+.email-container>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgray);
+}
+::placeholder{
+    color: white;
+
+}
+.btn-j{
+    background-color: var(--orange);
+   border-radius: 5px;
+    color: white;
+    text-align: center;
+    align-self: flex-start;
+}
+/* ===============Media Query(PHONE)============== */
+@media screen and (max-width: 768px) {
+   .join{
+    flex-direction: column;
+    gap: 1rem;
+   }
+   .left-j{
+    font-size: x-large;
+    flex-direction: column;
+    margin-bottom: 0.2rem;
+   }
+   /* .right-j{
+    
+   } */
+}

@@ -1,0 +1,62 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 10rem;
+    height: 3rem;
+}
+.header-menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+    
+}
+.header-menu > li{
+    cursor: pointer;
+   
+}
+.header-menu > a{
+    text-decoration: none;
+    color: white !important;
+
+}
+.header-menu > a:hover{
+    color: var(--orange) !important;
+}
+.header-menu > li:hover{
+    color: var(--orange);
+}
+/* ===============Media Query(PHONE)============== */
+@media screen and (max-width: 768px) {
+   /* .header-menu{
+    flex-direction: column;
+    gap: .8rem;
+   }
+   .header-menu > li{
+    cursor: pointer;
+    font-size: .9rem;
+
+   
+} */
+.header>:nth-child(2){
+    position: fixed;
+    right: 2rem;
+    z-index: 99;
+}
+.header-menu{
+    flex-direction: column;
+    background-color: var(--appColor);
+    padding: 2rem;
+}
+   .header-menu > a{
+    text-decoration: none;
+    font-size: .9rem;
+    color: white !important;
+
+}
+.header-menu > a:hover{
+    color: var(--orange) !important;
+}
+}
